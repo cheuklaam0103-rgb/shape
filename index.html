@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>趣味四邊形探索樂園 - SEN 數學學習天地</title>
+    <title>趣味四邊形探索樂園 - 數學學習天地</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Canvas Confetti for Celebration -->
@@ -361,10 +361,10 @@
                 name: '正方形',
                 enName: 'Square',
                 color: '#38BDF8',
-                speechText: '正方形：有四條一樣長的邊，而且四個角都是直角。',
+                speechText: '正方形：有四條邊長度相等，而且四個角都是直角。',
                 targetIconSvg: `<svg viewBox="0 0 100 100" class="w-12 h-12"><rect x="15" y="15" width="70" height="70" fill="#38BDF8" fill-opacity="0.25" stroke="#0284C7" stroke-width="6" rx="2"/></svg>`,
                 features: [
-                    '✨ 4 條邊完全一樣長',
+                    '✨ 4 條邊長度相等',
                     '📐 4 個角都是直角 (90°)',
                     '平行：兩組對邊互相平行'
                 ],
@@ -381,7 +381,7 @@
                 targetIconSvg: `<svg viewBox="0 0 100 100" class="w-12 h-12"><rect x="10" y="25" width="80" height="50" fill="#818CF8" fill-opacity="0.25" stroke="#4338CA" stroke-width="6" rx="2"/></svg>`,
                 features: [
                     '↔ 對邊（相對的邊）一樣長',
-                    '📐 4 個角都是直角 (90°)',
+                    '📐 4 個角都是直角',
                     '平行：兩組對邊互相平行'
                 ],
                 realWorldName: '窗戶 / 電視機',
@@ -393,10 +393,10 @@
                 name: '梯形',
                 enName: 'Trapezoid',
                 color: '#FBBF24',
-                speechText: '梯形：只有一組對邊互相平行。',
+                speechText: '梯形：只有一組對邊平行。',
                 targetIconSvg: `<svg viewBox="0 0 100 100" class="w-12 h-12"><polygon points="30,20 70,20 88,80 12,80" fill="#FBBF24" fill-opacity="0.3" stroke="#D97706" stroke-width="6" stroke-linejoin="round"/></svg>`,
                 features: [
-                    '只有 1 組對邊互相平行',
+                    '只有 1 組對邊平行',
                     '另外兩條邊不平行',
                     '形狀像手袋、梯子或屋頂'
                 ],
@@ -409,12 +409,12 @@
                 name: '菱形',
                 enName: 'Rhombus',
                 color: '#FB7185',
-                speechText: '菱形：四條邊都一樣長，兩組對邊互相平行。',
+                speechText: '菱形：四條邊都一樣長，兩組對邊平行，兩組對角相等。',
                 targetIconSvg: `<svg viewBox="0 0 100 100" class="w-12 h-12"><polygon points="50,10 88,50 50,90 12,50" fill="#FB7185" fill-opacity="0.3" stroke="#E11D48" stroke-width="6" stroke-linejoin="round"/></svg>`,
                 features: [
                     '✨ 4 條邊完全一樣長',
-                    '兩組對邊互相平行',
-                    '形狀像傾斜的鑽石或風箏'
+                    '兩組對邊平行',
+                    '兩組對角相等'
                 ],
                 realWorldName: '風箏 / 鑽石標誌',
                 realWorldDesc: '天空飛的風箏或路上的鑽石圖案，四條邊一樣長，傾斜美觀！',
@@ -425,11 +425,12 @@
                 name: '平行四邊形',
                 enName: 'Parallelogram',
                 color: '#34D399',
-                speechText: '平行四邊形：有兩組對邊互相平行，相對的邊一樣長。',
+                speechText: '平行四邊形：有兩組對邊平行，對邊長度相等，兩組對角相等。',
                 targetIconSvg: `<svg viewBox="0 0 100 100" class="w-12 h-12"><polygon points="30,20 90,20 70,80 10,80" fill="#34D399" fill-opacity="0.3" stroke="#059669" stroke-width="6" stroke-linejoin="round"/></svg>`,
                 features: [
-                    '兩組對邊互相平行',
-                    '↔️ 相對的邊長度相等',
+                    '兩組對邊平行',
+                    '↔️ 對邊長度相等',
+                    '兩組對角相等',
                     '像傾斜推倒的長方形'
                 ],
                 realWorldName: '斜拉黑板擦 / 斜標誌',
@@ -452,21 +453,21 @@
                 hint: "💡 提示：西洋棋盤或相框就是這個形狀喔！",
                 options: ["正方形", "長方形", "梯形", "平行四邊形"],
                 correct: 0,
-                explain: "答對了！正方形的 4 條邊都一樣長，而且 4 個角都是 90度直角！"
+                explain: "答對了！正方形的 4 條邊都一樣長，而且 4 個角都是直角！"
             },
             {
                 q: "「只有 1 組對邊互相平行」這是什麼圖形？",
                 hint: "💡 提示：想想看房子屋頂或梯子的形狀！",
                 options: ["菱形", "梯形", "正方形", "長方形"],
                 correct: 1,
-                explain: "太棒了！梯形特徵就是『只有一組對邊平行』！"
+                explain: "太好了！梯形特徵就是『只有一組對邊平行』！"
             },
             {
                 q: "「相對的邊一樣長，4 個角都是直角」，這是哪一個圖形？",
                 hint: "💡 提示：家裡的電視螢幕或黑板就是這個形狀！",
                 options: ["平行四邊形", "菱形", "長方形", "梯形"],
                 correct: 2,
-                explain: "非常棒！長方形的對邊長度相等，4 個角都是直角！"
+                explain: "非常好！長方形的對邊長度相等，4 個角都是直角！"
             },
             {
                 q: "「4 條邊都一樣長，但角角不一定是直角，像漂亮的風箏」，這是什麼？",
@@ -480,7 +481,7 @@
                 hint: "💡 提示：名字裡有『平行』兩個字喔！",
                 options: ["平行四邊形", "梯形", "正方形", "菱形"],
                 correct: 0,
-                explain: "太讚了！就是平行四邊形！它有兩組平行對邊。"
+                explain: "太好了！就是平行四邊形！它有兩組平行對邊。"
             }
         ];
 
